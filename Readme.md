@@ -1,4 +1,4 @@
-# Project Title: Periocular Recognition in the Visible Spectrum
+# Periocular Recognition in the Visible Spectrum
 
 Project Abstract:
 
