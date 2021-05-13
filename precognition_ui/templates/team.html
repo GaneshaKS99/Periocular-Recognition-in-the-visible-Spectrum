@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background-image: url("{{url_for('static', filename='p.jpg') }}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.topnav a  {
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(158, 81, 230);
+  color: black;
+}
+
+.topnav a.home {
+  float: left;
+  background-color: #000000;
+  padding: 7px;
+}
+
+.topnav a.active {
+    background-color: #033d3d;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 15px;
+  text-align: center;
+  background-color:  #00ffff;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a class="home" href="ui.html" ><img src="{{url_for('static', filename='pr.jpg')}}"  height="30px"></a>
+    <a class="active" href="team.html">Team</a>
+    <a href="tech.html">Technology</a>
+    <a href="about.html">About</a>
+</div>
+
+<div class="about-section">
+  <h1 style="font-size: 40px;
+  font-weight: 100;"">Team</h1>
+  <h7><b>PW21PK02</b></h7><br>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='rohit.jpg')}}" alt="Rohit" style="width:100%">
+      <div class="container">
+        <h2 style="text-align: center;">Rohit Motammary</h2>
+        <p class="title" style="text-align: center;">PES1201700167</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='yamini.jpg')}}" alt="Yamini" style="width: 100%"  >
+      <div class="container">
+        <h2 style="text-align: center;">Yamini Cherukuri</h2>
+        <p class="title" style="text-align: center;">PES1201701029</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='avi.jpg')}}" alt="Avi" style="width:100%">
+      <div class="container">
+        <h2 style="text-align: center;">Avi Bansal</h2>
+        <p class="title" style="text-align: center;">PES1201701116</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="{{url_for('static', filename='ganesha.jpg')}}" alt="Ganesha" style="width:100%">
+      <div class="container">
+        <h2 style="text-align: center;">Ganesha K S</h2>
+        <p class="title" style="text-align: center;">PES1201701731</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
